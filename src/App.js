@@ -1,23 +1,12 @@
-import Button from './Button';
-function App (){
-    return (
-    <div>
-        <div>
-        <Button primary secondary success warning danger >Click Me!</Button>
-        </div>
-        <div>
-        <Button>Buy Now!</Button>
-        </div>
-        <div>
-        <Button>See Deal!</Button>
-        </div>
-        <div>
-        <Button>Hide Ads!</Button>
-        </div>
-        <div>
-        <Button>something</Button>
-        </div>
-    </div>
-    );
+
+import Dropdown from './components/Dropdown';
+function App () {
+ const option =[
+    {label :'Red', value:'red'},
+    {label :'Green', value:'green'},
+    {label :'Blue', value:'blue'}    
+]
+    return <Dropdown option = {option}/>
 }
+
 export default App;
